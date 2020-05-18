@@ -1,4 +1,4 @@
-package com.cybertek.tests.VyTrack;
+package com.cybertek.tests.VehicleModel;
 
 import com.cybertek.tests.TestBase;
 import com.cybertek.utilities.ConfigurationReader;
