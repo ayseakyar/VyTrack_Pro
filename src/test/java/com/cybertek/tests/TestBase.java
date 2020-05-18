@@ -29,7 +29,7 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         actions = new Actions(driver);
-        wait= new WebDriverWait(driver,10);
+        wait= new WebDriverWait(driver,20);
         rnd = new Random();
         faker =new Faker();
         driver.get(ConfigurationReader.get("qa1_url"));
