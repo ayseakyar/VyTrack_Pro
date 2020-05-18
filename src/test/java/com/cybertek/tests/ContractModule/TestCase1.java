@@ -1,1 +1,1 @@
-package com.cybertek.tests.ContractModule;import com.cybertek.tests.TestBase;public class TestCase1 extends TestBase {    public static void main(String[] args) {        System.out.println("first commit");    }}
+package com.cybertek.tests.ContractModule;import com.cybertek.tests.TestBase;public class TestCase1 extends TestBase {    public static void main(String[] args) {        System.out.println("first commit from contract-branch");    }}
