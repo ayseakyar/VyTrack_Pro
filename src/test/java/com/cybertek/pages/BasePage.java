@@ -3,6 +3,7 @@ package com.cybertek.pages;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
@@ -27,6 +28,12 @@ public abstract class BasePage {
         BrowserUtils.waitForClickablility(userName, 5).click();
         BrowserUtils.waitForClickablility(myUser, 5).click();
     }
+  
+      public BasePage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
+  
+  
 
 
 }
