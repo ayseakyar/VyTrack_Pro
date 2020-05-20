@@ -14,6 +14,15 @@ public class VyTrackVehicleOdometer extends TestBase {
 
     @Test
     public void VehicleOdometer() throws InterruptedException {
+
+
+        /*I want to create new variables here
+
+        fjhfjffgjhgjfjfghjf
+
+        */
+
+
         String odometerNumber = Integer.toString(rnd.nextInt(10)-1000);
         String vendor = faker.name().firstName() + " " + faker.name().lastName();
         String projectPath = System.getProperty("user.dir");
