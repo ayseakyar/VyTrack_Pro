@@ -39,7 +39,8 @@ public abstract class BasePage {
         } catch (Exception e) {
             BrowserUtils.clickWithWait(By.xpath(tabLocator), 5);
         }
-  
+    }
+
       public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
