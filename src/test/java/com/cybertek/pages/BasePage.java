@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage {
 
+    //commited by Osman
     @FindBy(css = "div[class='loader-mask shown']")
     @CacheLookup
     protected WebElement loaderMask;
@@ -28,7 +29,6 @@ public abstract class BasePage {
         BrowserUtils.waitForClickablility(userName, 5).click();
         BrowserUtils.waitForClickablility(myUser, 5).click();
     }
-
     public void navigateToModule(String tab, String module) {
         String tabLocator = "//span[normalize-space()='" + tab + "' and contains(@class, 'title title-level-1')]";
         String moduleLocator = "//span[normalize-space()='" + module + "' and contains(@class, 'title title-level-2')]";
