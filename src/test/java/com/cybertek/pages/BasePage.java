@@ -29,7 +29,6 @@ public abstract class BasePage {
         BrowserUtils.waitForClickablility(userName, 5).click();
         BrowserUtils.waitForClickablility(myUser, 5).click();
     }
-
     public void navigateToModule(String tab, String module) {
         String tabLocator = "//span[normalize-space()='" + tab + "' and contains(@class, 'title title-level-1')]";
         String moduleLocator = "//span[normalize-space()='" + module + "' and contains(@class, 'title title-level-2')]";
@@ -40,7 +39,8 @@ public abstract class BasePage {
         } catch (Exception e) {
             BrowserUtils.clickWithWait(By.xpath(tabLocator), 5);
         }
-  
+    }
+
       public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
