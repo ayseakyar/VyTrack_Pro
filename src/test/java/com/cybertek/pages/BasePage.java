@@ -44,8 +44,17 @@ public abstract class BasePage {
       public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
-  
-  
+
+        /**
+         * @return page name, for example: Dashboard
+         */
+        public String getPageSubTitle() {
+            //ant time we are verifying page name, or page subtitle, loader mask appears
+            waitUntilLoaderScreenDisappear();
+//        BrowserUtils.waitForStaleElement(pageSubTitle);
+            return pageSubTitle.getText();
+        }
 
 
-}
+
+    }
